@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mahendra Pratap — CS &amp; AI Builder</title>
+  <meta name="description" content="Portfolio of Mahendra Pratap, CS and AI undergraduate building autonomous agents, local-first systems, and full-stack products." />
+  <meta name="theme-color" content="#09090b" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  
+  <!-- Typography: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+
+  <!-- Stationary Fullscreen Studio Background Photograph (Always Visible, Stays at Place) -->
+  <div class="fixed-studio-bg" id="fixed-studio-bg" aria-hidden="true">
+    <div class="studio-photo"></div>
+    <div class="studio-subtle-scrim"></div>
+  </div>
+
+  <!-- Minimal Side Navigation (Buttons on Side for Changing Sections) -->
+  <nav class="side-nav" id="side-nav" aria-label="Sections Navigation">
+    <div class="side-nav-track">
+      <button class="side-nav-btn active" data-index="0" data-section="overview" aria-label="Section 1: Overview">
+        <span class="side-indicator"></span>
+        <span class="side-num">01</span>
+        <span class="side-text">Overview</span>
+      </button>
+      <button class="side-nav-btn" data-index="1" data-section="projects" aria-label="Section 2: Projects">
+        <span class="side-indicator"></span>
+        <span class="side-num">02</span>
+        <span class="side-text">Projects</span>
+      </button>
+      <button class="side-nav-btn" data-index="2" data-section="skills" aria-label="Section 3: Skills">
+        <span class="side-indicator"></span>
+        <span class="side-num">03</span>
+        <span class="side-text">Skills</span>
+      </button>
+      <button class="side-nav-btn" data-index="3" data-section="journey" aria-label="Section 4: Journey">
+        <span class="side-indicator"></span>
+        <span class="side-num">04</span>
+        <span class="side-text">Journey</span>
+      </button>
+      <button class="side-nav-btn" data-index="4" data-section="contact" aria-label="Section 5: Contact">
+        <span class="side-indicator"></span>
+        <span class="side-num">05</span>
+        <span class="side-text">Contact</span>
+      </button>
+    </div>
+
+    <!-- Quick Scroll Hint -->
+    <div class="side-scroll-hint" aria-hidden="true">
+      <span class="scroll-arrow">↓</span>
+      <span class="scroll-label">Scroll to change</span>
+    </div>
+  </nav>
+
+  <!-- Top Minimal Identity (Pure Text, No Header Bar) -->
+  <div class="minimal-brand" aria-label="Author Information">
+    <span class="brand-title">Mahendra Pratap</span>
+    <span class="brand-sep">/</span>
+    <span class="brand-desc">CS &amp; AI Builder</span>
+  </div>
+
+  <!-- Pure Text Story Container (Transitions happen purely for text) -->
+  <main class="text-stage" id="text-stage">
+
+    <!-- SECTION 1: OVERVIEW -->
+    <section class="text-section active" id="sec-overview" data-index="0">
+      <div class="text-wrapper">
+        <div class="text-eyebrow">
+          <span class="eyebrow-tag">AI AGENTS</span>
+          <span class="eyebrow-sep">·</span>
+          <span class="eyebrow-tag">LOCAL-FIRST</span>
+          <span class="eyebrow-sep">·</span>
+          <span class="eyebrow-tag">FULL-STACK</span>
+        </div>
+
+        <h1 class="text-hero-headline">
+          hello, i build<br />
+          <em>things that think.</em>
+        </h1>
+
+        <p class="text-hero-bio">
+          I build things that think and things that feel. I am a Computer Science undergraduate obsessed with 
+          autonomous AI agents, local-first architectures, and software engineered with purpose.
+        </p>
+
+        <div class="text-key-points">
+          <div class="point-item">
+            <span class="point-label">ACADEMICS</span>
+            <span class="point-value">Marwadi University · B.Tech CSE (AI &amp; ML) · CGPA 8.42</span>
+          </div>
+          <div class="point-item">
+            <span class="point-label">RESEARCH VISIT</span>
+            <span class="point-value">BISAG-N Gandhinagar · Geospatial AI &amp; Space Tech</span>
+          </div>
+          <div class="point-item">
+            <span class="point-label">FLAGSHIP BUILD</span>
+            <span class="point-value">MEMORA · Open-Source Autonomous AI Assistant</span>
+          </div>
+        </div>
+
+        <div class="text-actions-row">
+          <button class="text-action-link" data-goto="1">Explore Projects →</button>
+          <span class="action-sep">/</span>
+          <button class="text-action-link" data-goto="4">Get in Touch →</button>
+          <span class="action-sep">/</span>
+          <button class="text-action-copy copy-email-btn" data-email="mp498343@gmail.com">Copy Email</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PROJECTS -->
+    <section class="text-section" id="sec-projects" data-index="1">
+      <div class="text-wrapper projects-wrapper">
+        <div class="text-eyebrow">
+          <span class="eyebrow-tag">02 / SELECTED BUILDS</span>
+          <span class="eyebrow-sep">·</span>
+          <span class="eyebrow-tag" id="proj-current-counter">№ 01 / 04</span>
+        </div>
+
+        <!-- Project Display: Pure typography with project switcher -->
+        <div class="project-pure-content">
+          <div class="proj-meta-line">
+            <span class="proj-badge-lang" id="proj-lang">Python</span>
+            <span class="proj-badge-domain" id="proj-domain">Autonomous Agents</span>
+            <span class="proj-badge-arch" id="proj-arch">Custom LLM Loop</span>
+          </div>
+
+          <h2 class="project-pure-title" id="proj-title">MEMORA</h2>
+
+          <p class="project-pure-desc" id="proj-desc">
+            MEMORA is an open-source personal AI assistant and autonomous agent engineered from scratch. Features proactive task execution, custom orchestration, and contextual local memory.
+          </p>
+
+          <div class="project-links-line">
+            <a href="https://github.com/mahendrapratap23/MEMORA" target="_blank" rel="noopener noreferrer" class="pure-ext-link" id="proj-repo-link">
+              <span>View GitHub Repository</span>
+              <span class="ext-arrow">↗</span>
+            </a>
+          </div>
+
+          <!-- Project Quick Switcher (Pure text pills & arrows) -->
+          <div class="project-text-selector">
+            <span class="selector-label">BUILDS:</span>
+            <div class="selector-pills" id="project-pills">
+              <button class="pill-btn active" data-pindex="0">01 MEMORA</button>
+              <button class="pill-btn" data-pindex="1">02 droidbridge</button>
+              <button class="pill-btn" data-pindex="2">03 ghumo-ai</button>
+              <button class="pill-btn" data-pindex="3">04 trackly</button>
+            </div>
+            <div class="selector-nav">
+              <button class="proj-arrow-btn" id="btn-prev-proj" aria-label="Previous project">←</button>
+              <button class="proj-arrow-btn" id="btn-next-proj" aria-label="Next project">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SKILLS -->
+    <section class="text-section" id="sec-skills" data-index="2">
+      <div class="text-wrapper skills-wrapper">
+        <div class="text-eyebrow">
+          <span class="eyebrow-tag">03 / TECHNICAL CAPABILITIES</span>
+        </div>
+
+        <h2 class="text-section-heading">Engineered with precision.</h2>
+        <p class="text-section-sub">
+          Specialized in agentic intelligence, local-first runtime systems, and modern web software.
+        </p>
+
+        <div class="skills-text-matrix">
+          <div class="skill-row">
+            <span class="skill-group-name">AI &amp; AGENTS</span>
+            <span class="skill-group-items">AI Agents, LLM Orchestration, Autonomous Workflows, Tool Calling, Geospatial AI</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-group-name">LANGUAGES</span>
+            <span class="skill-group-items">Python, TypeScript, JavaScript, Rust, SQL, Modern Semantic CSS</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-group-name">FRAMEWORKS</span>
+            <span class="skill-group-items">React, Next.js, Local-First Systems &amp; Sync, Full-Stack Architecture, REST &amp; WebSockets</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-group-name">FOUNDATIONS</span>
+            <span class="skill-group-items">GIS &amp; Remote Sensing Data, Git, Open Source Collaboration, Linux Shell, Algorithms &amp; Data Structures</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: JOURNEY -->
+    <section class="text-section" id="sec-journey" data-index="3">
+      <div class="text-wrapper journey-wrapper">
+        <div class="text-eyebrow">
+          <span class="eyebrow-tag">04 / BACKGROUND &amp; ROOTS</span>
+        </div>
+
+        <div class="journey-pure-columns">
+          <!-- Experience Column -->
+          <div class="journey-col">
+            <h3 class="journey-heading">EXPERIENCE</h3>
+            <div class="journey-entry">
+              <span class="j-sub">RESEARCH VISIT · GANDHINAGAR</span>
+              <h4 class="j-title">BISAG-N</h4>
+              <p class="j-desc">
+                Bhaskaracharya National Institute for Space Applications and Geo-informatics. Explored Space Tech, GIS, Remote Sensing, and machine learning pipelines for satellite spatial analysis.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="journey-col">
+            <h3 class="journey-heading">EDUCATION</h3>
+            <div class="journey-entry">
+              <span class="j-sub">2024 — 2028</span>
+              <h4 class="j-title">Marwadi University</h4>
+              <p class="j-meta">B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</p>
+              <p class="j-score">Academic Standing: <strong>CGPA 8.42</strong></p>
+            </div>
+            <div class="journey-entry secondary">
+              <span class="j-sub">UP BOARD</span>
+              <p class="j-meta">Class XII (88.0%) &amp; Class X (89.0%)</p>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="journey-col">
+            <h3 class="journey-heading">CREDENTIALS</h3>
+            <ul class="cert-text-list">
+              <li>Oracle Cloud (OCI) AI Foundations</li>
+              <li>Cisco CCNA Cloud Networking</li>
+              <li>IBM Artificial Intelligence Fundamentals</li>
+              <li>Univ. of Michigan Computational Thinking</li>
+              <li>LinkedIn Learning GenAI &amp; Data Analytics</li>
+              <li>NPTEL Digital Electronics Foundations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT -->
+    <section class="text-section" id="sec-contact" data-index="4">
+      <div class="text-wrapper contact-wrapper">
+        <div class="text-eyebrow">
+          <span class="eyebrow-tag">05 / INITIATE CONTACT</span>
+        </div>
+
+        <h2 class="contact-hero-title">Say hello.</h2>
+        <p class="contact-hero-bio">
+          Open for autonomous agent projects, research collaborations, engineering roles, and innovative ventures.
+        </p>
+
+        <div class="contact-direct-line">
+          <span class="line-tag">DIRECT EMAIL</span>
+          <a href="mailto:mp498343@gmail.com" class="big-email-text">mp498343@gmail.com</a>
+          <button class="pure-text-copy-btn copy-email-btn" data-email="mp498343@gmail.com">
+            [ Copy Address ]
+          </button>
+        </div>
+
+        <div class="contact-links-grid">
+          <a href="https://github.com/mahendrapratap23" target="_blank" rel="noopener noreferrer" class="pure-social-link">
+            <span class="s-label">GitHub</span>
+            <span class="s-handle">@mahendrapratap23 ↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mahendra-pratap" target="_blank" rel="noopener noreferrer" class="pure-social-link">
+            <span class="s-label">LinkedIn</span>
+            <span class="s-handle">/in/mahendra-pratap ↗</span>
+          </a>
+          <a href="https://portfolio-v2-sand-kappa.vercel.app/resume.pdf" target="_blank" rel="noopener noreferrer" class="pure-social-link">
+            <span class="s-label">Curriculum Vitae</span>
+            <span class="s-handle">Download Resume PDF ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Minimal Toast Notification -->
+  <div class="pure-toast" id="pure-toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
